@@ -1,0 +1,10 @@
+{
+  "name": "@aphorica/js-utils",
+  "version": "1.0.0",
+  "description": "Various core js utils",
+  "main": "index.js",
+  "repository": "https://github.com/Aphorica/js-utils",
+  "author": "Rick Berger - Aphorica, Inc. <gbergeraph@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
