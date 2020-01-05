@@ -55,18 +55,6 @@ class CharType {
  */
 class JSUtils {
   /**
-   * convert string to hex chars, such as necessary for couchdb
-   * doc names
-   */
-  static stringToHexChars(str) {
-    let hexStr = '';
-    for (let ix = 0; ix < str.length; ix++)
-      hexStr += str.charCodeAt(ix).toString(16);
-
-    return hexStr;
-  }
-
-  /**
    * spaghetti against the wall func to stop event propagation/
    * default behavior.
    */
