@@ -1,10 +1,23 @@
 {
   "name": "@aphorica/js-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Various core js utils",
   "main": "index.js",
   "repository": "https://github.com/Aphorica/js-utils",
   "author": "Rick Berger - Aphorica, Inc. <gbergeraph@gmail.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "@aphorica/json-utils": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/runtime": "^7.8.3",
+    "babel-jest": "^25.1.0",
+    "jest": "^25.1.0"
+  }
 }

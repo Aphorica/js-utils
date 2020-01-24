@@ -4,13 +4,13 @@
  * along with some classification funcs
  */
 class KeyCodes {
-  static TAB_KEY() { return 0x09 }
-  static BACKSPACE_KEY() { return 0x08 }
-  static DELETE_KEY() { return 0x7F }
-  static RETURN_KEY() { return 0x0D }
-  static LINEFEED_KEY() { return 0x0A }
-  static ESC_KEY() { return 0x1B }
-  static SPACE_KEY() { return 0x20 }
+  static get TAB_KEY() { return 0x09 }
+  static get BACKSPACE_KEY() { return 0x08 }
+  static get DELETE_KEY() { return 0x7F }
+  static get RETURN_KEY() { return 0x0D }
+  static get LINEFEED_KEY() { return 0x0A }
+  static get ESC_KEY() { return 0x1B }
+  static get SPACE_KEY() { return 0x20 }
 
   static isControlKey(keyCode) {
     return (keyCode > 0 && keyCode < 0x20) || 
@@ -75,7 +75,7 @@ class JSUtils {
   }
 
   /**
-   * in an async environment, we can sleep without blocking.
+   * async version of sleep
    */
   static async sleep(msec) {
     return new Promise((resolve, reject)=>
